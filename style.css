@@ -1,37 +1,54 @@
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:新細明體;
-	panose-1:2 2 5 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Aptos;}
-@font-face
-	{font-family:"\@新細明體";
-	panose-1:2 1 6 1 0 1 1 1 1 1;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
-.MsoChpDefault
-	{font-family:"Aptos",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:8.0pt;
-	line-height:115%;}
- /* Page Definitions */
- @page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 90.0pt 72.0pt 90.0pt;
-	layout-grid:18.0pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
+.bingo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+    max-width: 600px;
+    background-color: #f0f8ff;
+    border: 2px solid #007acc;
+    border-radius: 10px;
+}
+
+.bingo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.bingo-button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bingo-button:hover {
+    background-color: #005f99;
+}
+
+.bingo-cell {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 1px solid #007acc;
+    background-color: #fff;
+}
+
+@media (max-width: 600px) {
+    .bingo-container {
+        width: 90%;
+    }
+    .bingo-cell {
+        height: 45px;
+        width: 45px;
+        font-size: 20px;
+    }
+}
