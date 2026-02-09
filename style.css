@@ -1,54 +1,49 @@
-.bingo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin: auto;
-    max-width: 600px;
-    background-color: #f0f8ff;
-    border: 2px solid #007acc;
-    border-radius: 10px;
-}
-
 .bingo-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
-}
-
-.bingo-button {
-    background-color: #007acc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.bingo-button:hover {
-    background-color: #005f99;
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
 }
 
 .bingo-cell {
-    height: 60px;
-    width: 60px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 24px;
-    border: 1px solid #007acc;
-    background-color: #fff;
+    align-items: center;
+    background-color: #e8e8e8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 2em;
+    height: 100px;
+}
+
+.bingo-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bingo-button:hover {
+    background-color: #45a049;
 }
 
 @media (max-width: 600px) {
-    .bingo-container {
-        width: 90%;
+    .bingo-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
     .bingo-cell {
-        height: 45px;
-        width: 45px;
-        font-size: 20px;
+        height: 80px;
+    }
+    .bingo-button {
+        padding: 12px 24px;
+        font-size: 14px;
     }
 }
