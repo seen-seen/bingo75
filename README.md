@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BINGO 抽號機 - 遊戲說明</title>
+    <title>BINGO GAME EXPLANATION</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #f8fafc; font-family: "Microsoft JhengHei", sans-serif; }
